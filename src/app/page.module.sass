@@ -1,0 +1,88 @@
+.MainContainer
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 100vh
+
+.Card
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  border: solid 0.15rem
+  border-radius: 2rem
+  box-shadow: 0.8rem 0.8rem 0px black
+  background-color: $white
+  padding: 2.4rem
+  max-width: 32.7rem
+
+  &__imageContainer
+    position: relative
+    width: 100%
+    height: 20rem
+    overflow: hidden
+    border-radius: 1rem
+
+    & > img
+      object-fit: cover
+
+  &__description
+    width: 100%
+    height: 17.3rem
+    margin: 2.4rem 0
+    background-color: $white
+    color: $gray950
+    font-family: var(--font-figtree)
+
+    &__learningText
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 7.3rem
+      height: 2.6rem
+      padding: 0.4rem 1.2rem
+      font-size: 1.2rem
+      font-weight: 800
+      border-radius: 0.5rem
+      margin-bottom: 1.2rem
+
+    &__publishDate
+      background-color: $white
+      font-size: 1.2rem
+      font-weight: 500
+      margin-bottom: 1.2rem
+
+    &__title
+      background-color: $white
+      font-weight: 800
+      margin-bottom: 1.2rem
+
+      &:hover
+        color: $yellow
+        cursor: pointer
+
+    &__description
+      background-color: $white
+      font-size: 1.4rem
+      color: $gray500
+      font-weight: 500
+      margin-bottom: 2.4rem
+
+  &__author
+    background-color: $white
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 12.9rem
+
+    & > img
+      background-color: $white
+    
+    & > h3
+      background-color: $white
+      font-size: 1.4rem
+      font-weight: 800
+
+@media (min-width: 1024px)
+  .Card
+    max-width: 38.4rem
