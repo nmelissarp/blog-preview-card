@@ -1,5 +1,3 @@
-import Illustration from '../../public/images/illustration-article.svg'
-
 import Image from 'next/image'
 import styles from './page.module.sass'
 
