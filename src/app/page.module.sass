@@ -1,0 +1,98 @@
+.main
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 100%
+  height: 100%
+
+.container
+  display: flex
+  flex-direction: column
+  gap: 2.4rem
+  padding: 2.4rem
+  width: 32.7rem
+  height: 50.1rem
+  border: 1px solid $gray500
+  border-radius: 2rem
+  box-sizing: border-box
+  box-shadow: 8px 8px 0px 0px $gray950
+  background: $white
+  font-family: $font-family
+
+  &__image
+    width: 27.9rem
+    height: 20rem
+    border-radius: 1rem
+    background-image: url('/images/illustration-article.svg')
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+
+  &__content
+    display: flex
+    flex-direction: column
+    gap: 1.2rem
+
+    span
+      background-color: $yellow
+      font-weight: 800
+      font-size: 1.2rem
+      color: $gray950
+      line-height: 150%
+      border-radius: 4px
+      padding: 0.4rem 1.2rem
+      width: fit-content
+
+    h3
+      font-weight: 500
+      font-size: 1.2rem
+      color: $gray950
+      line-height: 150%
+
+    article
+      display: flex
+      flex-direction: column
+      gap: 1.2rem
+
+      h1
+        font-weight: 800
+        font-size: 2rem
+        color: $gray950
+        line-height: 150%
+
+      p
+        font-weight: 500
+        font-size: 1.4rem
+        color: $gray500
+        line-height: 150%
+
+  &__author
+    display: flex
+    width: fit-content
+    gap: 1.2rem
+    align-items: center
+
+    h3
+      font-weight: 800
+      color: $gray950
+      font-size: 1.4rem
+      line-height: 150%
+
+@media (min-width: 1440px)
+  .container
+    width: 38.4rem
+    height: 52.2rem
+
+    &__image
+      width: 33.6rem
+      height: 20rem
+
+    &__content
+      span, h3
+        font-size: 1.4rem
+
+      article
+        h1
+          font-size: 2.4rem
+        p
+          font-size: 1.6rem
