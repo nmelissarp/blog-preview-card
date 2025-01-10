@@ -8,10 +8,9 @@
 .container
   display: flex
   flex-direction: column
-  gap: 2.4rem
   padding: 2.4rem
   width: 32.7rem
-  height: 50.1rem
+  gap: 2.4rem
   border: 1px solid $gray500
   border-radius: 2rem
   box-sizing: border-box
@@ -27,6 +26,7 @@
     background-size: cover
     background-position: center
     background-repeat: no-repeat
+    box-sizing: border-box
 
   &__content
     display: flex
@@ -43,28 +43,27 @@
       padding: 0.4rem 1.2rem
       width: fit-content
 
-    h3
+    .date
       font-weight: 500
       font-size: 1.2rem
       color: $gray950
       line-height: 150%
 
-    article
-      display: flex
-      flex-direction: column
-      gap: 1.2rem
+    h1
+      font-weight: 800
+      font-size: 2rem
+      color: $gray950
+      line-height: 150%
 
-      h1
-        font-weight: 800
-        font-size: 2rem
-        color: $gray950
-        line-height: 150%
+      &:hover
+        color: $yellow
+        cursor: pointer
 
-      p
-        font-weight: 500
-        font-size: 1.4rem
-        color: $gray500
-        line-height: 150%
+    p
+      font-weight: 500
+      font-size: 1.4rem
+      color: $gray500
+      line-height: 150%
 
   &__author
     display: flex
@@ -72,7 +71,7 @@
     gap: 1.2rem
     align-items: center
 
-    h3
+    p
       font-weight: 800
       color: $gray950
       font-size: 1.4rem
@@ -88,11 +87,10 @@
       height: 20rem
 
     &__content
-      span, h3
+      span, .date
         font-size: 1.4rem
 
-      article
-        h1
-          font-size: 2.4rem
-        p
-          font-size: 1.6rem
+      h1
+        font-size: 2.4rem
+      p
+        font-size: 1.6rem

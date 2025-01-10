@@ -13,6 +13,9 @@ const nextConfig: NextConfig = {
     })
     return config
   },
+  images: {
+    unoptimized: true,
+  },
 }
 
 export default nextConfig
